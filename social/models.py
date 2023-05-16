@@ -5,6 +5,14 @@ from cloudinary.models import CloudinaryField
 STATUS = ((0, "Draft"), (1, "Published"))
 
 
+# Custom model code to add category to posts
+class Category(models.Model):
+    name = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=100, unique=True)
+
+    def __str__(self):
+        return self.name
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -12,7 +20,6 @@ class Post(models.Model):
     author = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="blog_posts"
     )
-    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
     featured_image = CloudinaryField('image', default='placeholder')
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
@@ -21,6 +28,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     likes = models.ManyToManyField(
         User, related_name='blogpost_like', blank=True)
+    category = models.ForeignKey(Category, on_delete=models.SET_NULL, null=True)
 
     class Meta:
         ordering = ["-created_on"]
@@ -47,11 +55,3 @@ class Comment(models.Model):
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
 
-
-# Custom model code to add category to posts
-class Category(models.Model):
-    name = models.CharField(max_length=100)
-    slug = models.SlugField(max_length=100, unique=True)
-
-    def __str__(self):
-        return self.name
