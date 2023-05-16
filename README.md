@@ -13,8 +13,7 @@ A news article website in a tabloid style made for fun reading of all ages and u
 * This project was planned and developed using Agile development process.
 *User stories were mapped during the process and completed as neccesary.
 
-![Screenshot](static/images/UserStories1.jpg?raw=true "Grand-Social")
-![Screenshot](static/images/UserStories2.jpg?raw=true "Grand-Social")
+
 ![Screenshot](static/images/UserStories3.jpg?raw=true "Grand-Social")
 ![Screenshot](static/images/UserStories4.jpg?raw=true "Grand-Social")
 ![Screenshot](static/images/UserStories5.jpg?raw=true "Grand-Social")
@@ -26,6 +25,7 @@ A news article website in a tabloid style made for fun reading of all ages and u
 * Article Management: Provides an interface for content creators to write, edit, and publish articles. This includes options for categorizing articles, setting featured images, and controlling the publication status.
 * Categories: Organize articles into categories to facilitate navigation and browsing. 
 * User Interactions: Enable users to like articles.
+* The ability to register accounts and login and logout.
 
 ![Screenshot](static/images/features.jpg?raw=true "Grand-Social")
 
