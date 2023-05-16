@@ -29,6 +29,11 @@
                             <hr />
                             <p class="card-text text-muted h6">{{ post.created_on}} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes }}</p>
+
+                            <!-- Display categories for each post -->
+                            {% for category in post.categories.all %}
+                            <span class="badge badge-secondary">{{ category.name }}</span>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
