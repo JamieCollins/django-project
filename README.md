@@ -2,12 +2,23 @@
 
 
 
-![Screenshot]()
+![Screenshot](static/images/Website2.jpg?raw=true "Grand-Social")
 
 
 ## Grand Social
 
 A news article website in a tabloid style made for fun reading of all ages and user groups.
+
+## Agile development
+* This project was planned and developed using Agile development process.
+*User stories were mapped during the process and completed as neccesary.
+
+![Screenshot](static/images/UserStories1.jpg?raw=true "Grand-Social")
+![Screenshot](static/images/UserStories2.jpg?raw=true "Grand-Social")
+![Screenshot](static/images/UserStories3.jpg?raw=true "Grand-Social")
+![Screenshot](static/images/UserStories4.jpg?raw=true "Grand-Social")
+![Screenshot](static/images/UserStories5.jpg?raw=true "Grand-Social")
+![Screenshot](static/images/UserStories6.jpg?raw=true "Grand-Social")
 
 ## Features
 
@@ -16,11 +27,13 @@ A news article website in a tabloid style made for fun reading of all ages and u
 * Categories: Organize articles into categories to facilitate navigation and browsing. 
 * User Interactions: Enable users to like articles.
 
-
+![Screenshot](static/images/features.jpg?raw=true "Grand-Social")
 
 ## Issues/ Bugs
 
 * The images for the posts on the homepage are not loading correctly but load when you click into post.
+
+![Screenshot](static/images/Website3.jpg?raw=true "Grand-Social")
 
 
 ## Future Features
@@ -34,7 +47,7 @@ A news article website in a tabloid style made for fun reading of all ages and u
 
 ## Testing
 
-*
+* All Python code is consistent in style and conforms to the PEP8 style guide and validated HTML and CSS code.
 
 
 ## Deployment
